@@ -1,0 +1,747 @@
+:root {
+  --ff-roboto: "Roboto", "Segoe UI", sans-serif;
+  --section-heading: 3rem;
+  --sign-in-btn: 0.875rem;
+  --button: 1.125rem;
+  --fs-normal: 1.5rem;
+  --fs-small: 1.25rem;
+  --clr-primary: hsl(357, 92%, 47%);
+  --clr-primary-alt: hsl(357, 84%, 41%);
+  --clr-neutral: #2d2d2d;
+  --clr-neutral-alt: #2e2e2e;
+  --stn-padding: 4.5rem;
+  --divider-height: 0.5rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+label, select {
+  font-size: 1rem;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.d-flex {
+  display: flex;
+}
+
+.fx-col {
+  flex-direction: column;
+}
+
+.fx-row-rev {
+  flex-direction: row-reverse;
+}
+
+.fx-1 {
+  flex: 1;
+}
+
+.fx-2 {
+  flex: 2;
+}
+
+.fx-3 {
+  flex: 3;
+}
+
+.fw-normal {
+  font-weight: 300;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-extr-bold {
+  font-weight: 900;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center-end {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.gap-1 {
+  gap: 1em;
+}
+
+.gap-2 {
+  gap: 2em;
+}
+
+.gap-3 {
+  gap: 3em;
+}
+
+.gap-4 {
+  gap: 4em;
+}
+
+.clr-primary {
+  background-color: var(--clr-primary);
+}
+
+.clr-primary-alt {
+  background-color: var(--clr-primary-alt);
+}
+
+.clr-neutral {
+  background-color: var(--clr-neutral);
+}
+
+.clr-neutral-alt {
+  background-color: var(--clr-neutral-alt);
+}
+
+.ff-roboto {
+  font-family: var(--ff-roboto);
+}
+
+.fs-normal {
+  font-size: var(--fs-normal);
+}
+
+.fs-small {
+  font-size: var(--fs-small);
+}
+
+.txt-c {
+  text-align: center;
+}
+
+.stn-heading {
+  font-size: var(--section-heading);
+}
+
+.stn-padding {
+  padding-block: var(--stn-padding);
+}
+
+.divider {
+  height: var(--divider-height);
+  background-color: #232323;
+  width: 100%;
+}
+
+.page-wrapper {
+  width: 100%;
+}
+
+.page-wrapper > header,
+.page-wrapper > footer,
+.page-wrapper > .our-cards > section {
+  width: calc(83.33% - 4rem);
+  margin: 0 auto;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.m-30 {
+  margin: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.m-40 {
+  margin: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.m-50 {
+  margin: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.m-60 {
+  margin: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.ml-60 {
+  margin-left: 60px;
+}
+
+.mr-60 {
+  margin-right: 60px;
+}
+
+.m-70 {
+  margin: 70px;
+}
+
+.mt-70 {
+  margin-top: 70px;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.ml-70 {
+  margin-left: 70px;
+}
+
+.mr-70 {
+  margin-right: 70px;
+}
+
+.m-80 {
+  margin: 80px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.ml-80 {
+  margin-left: 80px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.m-90 {
+  margin: 90px;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-90 {
+  margin-bottom: 90px;
+}
+
+.ml-90 {
+  margin-left: 90px;
+}
+
+.mr-90 {
+  margin-right: 90px;
+}
+
+.m-100 {
+  margin: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.mr-100 {
+  margin-right: 100px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pr-40 {
+  padding-right: 40px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pb-50 {
+  padding-bottom: 50px;
+}
+
+.pl-50 {
+  padding-left: 50px;
+}
+
+.pr-50 {
+  padding-right: 50px;
+}
+
+.p-60 {
+  padding: 60px;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pl-60 {
+  padding-left: 60px;
+}
+
+.pr-60 {
+  padding-right: 60px;
+}
+
+.p-70 {
+  padding: 70px;
+}
+
+.pt-70 {
+  padding-top: 70px;
+}
+
+.pb-70 {
+  padding-bottom: 70px;
+}
+
+.pl-70 {
+  padding-left: 70px;
+}
+
+.pr-70 {
+  padding-right: 70px;
+}
+
+.p-80 {
+  padding: 80px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.pl-80 {
+  padding-left: 80px;
+}
+
+.pr-80 {
+  padding-right: 80px;
+}
+
+.p-90 {
+  padding: 90px;
+}
+
+.pt-90 {
+  padding-top: 90px;
+}
+
+.pb-90 {
+  padding-bottom: 90px;
+}
+
+.pl-90 {
+  padding-left: 90px;
+}
+
+.pr-90 {
+  padding-right: 90px;
+}
+
+.p-100 {
+  padding: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.pl-100 {
+  padding-left: 100px;
+}
+
+.pr-100 {
+  padding-right: 100px;
+}
+
+.btn-shape {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--button);
+  font-family: var(--ff-roboto);
+  font-weight: 500;
+  color: white;
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+.btn-shape:hover {
+  background-color: var(--clr-primary-alt);
+}
+.btn-signin {
+  padding: 0.25rem 1rem;
+  font-size: var(--sign-in-btn);
+}
+
+.select-button {
+  position: relative;
+}
+.select-button .globe {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  z-index: 1;
+}
+.select-button .arrow-down {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  color: white;
+  z-index: 1;
+}
+.select-button-lang {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  padding: 6px 36px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  background: rgba(22, 22, 22, 0.7);
+  border-color: rgba(128, 128, 128, 0.7);
+  color: white;
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo {
+  width: 150px;
+  height: 40px;
+  display: block;
+}
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.email-input {
+  border: 1px solid rgba(128, 128, 128, 0.7);
+  border-radius: 0.25rem;
+  background-color: rgba(22, 22, 22, 0.7);
+  width: 300px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+.email-input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--ff-roboto);
+}
+
+header {
+  height: 86px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 99;
+  width: 100%;
+  transform: translateX(-50%);
+}
+header .logo {
+  margin-right: auto;
+}
+
+.hero-section {
+  min-height: 43.75rem;
+  padding: 9.875rem 0 4rem;
+  background-image: url(/public/images/main_background.jpg);
+  background-position: 45% 70%;
+  position: relative;
+  width: 100%;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.television .text p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.television .image video {
+  top: 95px;
+  left: 85px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=main.css.map */

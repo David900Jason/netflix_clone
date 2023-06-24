@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import Font Awesome Lib -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;600;700;900;1000&family=Open+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="./public/css/main.css" />
+
+    <!-- Page Title -->
+    <link
+      rel="shortcut icon"
+      href="./public/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>Netflix Clone</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Start Header -->
+      <header class="d-flex between-flex gap-1">
+        <span class="logo">
+          <img src="public/images/logo_alt.png" alt="" />
+        </span>
+        <span class="select-button">
+          <i class="fa-solid fa-angle-down arrow-down"></i>
+          <i class="fa-solid fa-globe globe"></i>
+          <select class="select-button-lang | ff-roboto">
+            <option value="english">English</option>
+            <option value="arabic">Arabic</option>
+          </select>
+        </span>
+        <span class="sign-in-button">
+          <button class="btn-shape btn-signin" href="#">Sign in</button>
+        </span>
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Cards -->
+      <main class="our-cards">
+        <!-- Start Hero Section -->
+        <div class="hero-section center-flex fx-col">
+          <div class="info txt-c p-relative">
+            <h1 class="stn-heading">Unlimited movies, TV shows, and more</h1>
+            <p class="fs-normal">Plans now start at EGP70/month.</p>
+          </div>
+          <div class="input-group p-relative txt-c mt-30">
+            <p class="fs-normal">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <form class="d-flex justify-center mt-20">
+              <input
+                class="email-input p-relative"
+                type="email"
+                id="email"
+                required
+                placeholder="Email Address"
+              />
+              <button class="btn-shape ml-20">
+                Get Started
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <!-- End Hero Section -->
+        <!-- Start Television Section -->
+        <section class="television gap-1 d-flex align-center stn-padding">
+          <div class="text fx-1">
+            <h1 class="stn-heading fw-extr-bold">Enjoy on your TV</h1>
+            <p class="fs-normal">
+              Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray players, and more.
+            </p>
+          </div>
+          <div class="image fx-1 p-relative">
+            <img
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              alt=""
+            />
+            <!-- <video class="p-absolute" autoplay playsinline muted loop>
+              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+            </video> -->
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- End Television Section -->
+        <!-- Start Phone Section -->
+        <section class="phone d-flex align-center stn-padding fx-row-rev">
+          <div class="text fx-1">
+            <h1 class="stn-heading fw-extr-bold">
+              Download your shows to watch offline
+            </h1>
+            <p class="fs-normal">
+              Save your favorites easily and always have something to watch.
+            </p>
+          </div>
+          <div class="image fx-1 p-relative">
+            <img
+              alt=""
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+              data-uia="nmhp-card-animation-asset-image"
+              class="default-ltr-cache-1d3w5wq"
+            />
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- End Phone Section -->
+        <!-- Start Devices Section -->
+        <section class="devices gap-1 d-flex align-center stn-padding">
+          <div class="text fx-1">
+            <h1 class="stn-heading fw-extr-bold">Watch everywhere</h1>
+            <p class="fs-normal">
+              Stream unlimited movies and TV shows on your phone, tablet,
+              laptop, and TV.
+            </p>
+          </div>
+          <div class="image fx-1 p-relative">
+            <img
+              alt=""
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+            />
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- End Devices Section -->
+        <!-- Start Kids Account Section -->
+        <section
+          class="kids-account d-flex align-center stn-padding fx-row-rev"
+        >
+          <div class="text fx-1">
+            <h1 class="stn-heading fw-extr-bold">Create profiles for kids</h1>
+            <p class="fs-normal">
+              Send kids on adventures with their favorite characters in a space
+              made just for them—free with your membership.
+            </p>
+          </div>
+          <div class="image fx-1 p-relative">
+            <img
+              alt=""
+              src="https://occ-0-6661-56.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55"
+            />
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- End Kids Account Section -->
+      </main>
+      <!-- End Cards -->
+
+      <!-- Start Footer -->
+      <footer></footer>
+      <!-- End Footer -->
+    </div>
+    <script type="module" src="./public/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+@use "./root" as *;
+@use "./reset" as *;
+@use "./layout" as *;
+@use "./utilitites" as *;
+@use "./components" as *;
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--ff-roboto);
+}
+
+header {
+  height: 86px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 99;
+  width: 100%;
+  transform: translateX(-50%);
+
+  .logo {
+    margin-right: auto;
+  }
+}
+
+.hero-section {
+  min-height: 43.75rem;
+  padding: 9.875rem 0 4rem;
+  background-image: url(/public/images/main_background.jpg);
+  background-position: 45% 70%;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 0,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+}
+
+.television {
+  .text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .image video {
+    top: 95px;
+    left: 85px;
+    z-index: -1;
+  }
+}
