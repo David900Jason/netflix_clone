@@ -27,8 +27,12 @@ header {
 .hero-section {
   min-height: 43.75rem;
   padding: 9.875rem 0 4rem;
-  background-image: url(/public/images/main_background.jpg);
-  background-position: 45% 70%;
+  background: {
+    image: url("../images/main_background.jpg");
+    position: right bottom;
+    size: 125%;
+    repeat: no-repeat;
+  }
   position: relative;
   width: 100%;
 
@@ -54,5 +58,34 @@ header {
     top: 95px;
     left: 85px;
     z-index: -1;
+  }
+}
+
+.devices {
+  video {
+    top: 10%;
+    left: 18%;
+    z-index: -1;
+    width: 60%;
+  }
+}
+
+.question {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &::before {
+    content: "\2b";
+    font-family: "Font Awesome 6 Free";
+    font-size: calc(var(--fs-normal) + 1rem);
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  &:hover {
+    background-color: var(--clr-neutral-alt);
   }
 }

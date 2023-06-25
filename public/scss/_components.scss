@@ -3,7 +3,7 @@
   &-shape {
     padding: 0.75rem 1.5rem;
     font: {
-      size: var(--button);
+      size: 1.5rem;
       family: var(--ff-roboto);
       weight: 500;
     }
@@ -19,9 +19,8 @@
     }
   }
 
-
   &-signin {
-    padding: .25rem 1rem;
+    padding: 0.25rem 1rem;
     font-size: var(--sign-in-btn);
   }
 }
@@ -49,11 +48,9 @@
     font-size: 1rem;
     line-height: 1.25rem;
     padding: 6px 36px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 0.25rem;
-    background: rgba(22,22,22,0.7);
-    border-color: rgba(128,128,128,0.7);
+    border: 1px solid 0.25rem;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
     color: white;
     appearance: none;
     position: relative;
@@ -73,17 +70,36 @@
 }
 
 .email-input {
-  border: 1px solid rgba(128,128,128,0.7);
+  border: 1px solid rgba(128, 128, 128, 0.7);
   border-radius: 0.25rem;
 
-  background-color: rgba(22,22,22,0.7);
+  background-color: rgba(22, 22, 22, 0.7);
 
-  width: 300px;
-  padding: .5rem 1rem;
+  width: 400px;
+  padding: 0.5rem 1rem;
   color: white;
 
   &::placeholder {
     color: #fff;
     opacity: 0.8;
+  }
+}
+
+.install-box {
+  border: 2px solid #232323;
+  background-color: #000;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  top: 75%;
+  left: 21%;
+  min-width: 21.875rem;
+
+  img {
+    display: block;
+    height: 4.5rem;
+  }
+
+  .video img {
+    height: 3.5rem;
   }
 }

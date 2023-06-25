@@ -58,11 +58,13 @@
         <!-- Start Hero Section -->
         <div class="hero-section center-flex fx-col">
           <div class="info txt-c p-relative">
-            <h1 class="stn-heading">Unlimited movies, TV shows, and more</h1>
-            <p class="fs-normal">Plans now start at EGP70/month.</p>
+            <h1 class="stn-heading fw-extr-bold">
+              Unlimited movies, TV shows, and more
+            </h1>
+            <p class="fs-normal mt-10">Plans now start at EGP70/month.</p>
           </div>
           <div class="input-group p-relative txt-c mt-30">
-            <p class="fs-normal">
+            <p class="fs-small">
               Ready to watch? Enter your email to create or restart your
               membership.
             </p>
@@ -93,13 +95,13 @@
             </p>
           </div>
           <div class="image fx-1 p-relative">
-            <img
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
-              alt=""
-            />
-            <!-- <video class="p-absolute" autoplay playsinline muted loop>
-              <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
-            </video> -->
+            <img src="public/images/tv.png" alt="" class="d-block" />
+            <video class="p-absolute" autoplay playsinline muted loop>
+              <source
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                type="video/mp4"
+              />
+            </video>
           </div>
         </section>
         <div class="divider"></div>
@@ -115,12 +117,19 @@
             </p>
           </div>
           <div class="image fx-1 p-relative">
-            <img
-              alt=""
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
-              data-uia="nmhp-card-animation-asset-image"
-              class="default-ltr-cache-1d3w5wq"
-            />
+            <img alt="" src="public/images/mobile-0819.jpg" class="d-block" />
+            <div
+              class="install-box d-flex align-center gap-1 pt-8 pb-8 pr-10 pl-10 p-absolute"
+            >
+              <img src="public/images/boxshot.png" alt="" />
+              <div class="text fx-1">
+                <h3 class="fs-small">Stranger things</h3>
+                <p class="clr-blue">Downloading...</p>
+              </div>
+              <div class="video">
+                <img src="public/images/download-icon.gif" alt="" />
+              </div>
+            </div>
           </div>
         </section>
         <div class="divider"></div>
@@ -135,10 +144,10 @@
             </p>
           </div>
           <div class="image fx-1 p-relative">
-            <img
-              alt=""
-              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
-            />
+            <img alt="" src="public/images/device-pile.png" class="d-block" />
+            <video class="p-absolute" autoplay playsinline muted loop>
+              <source src="public/images/video-devices.m4v" type="video/mp4" />
+            </video>
           </div>
         </section>
         <div class="divider"></div>
@@ -155,14 +164,58 @@
             </p>
           </div>
           <div class="image fx-1 p-relative">
-            <img
-              alt=""
-              src="https://occ-0-6661-56.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55"
-            />
+            <img alt="" src="public/images/kids_account.png" />
           </div>
         </section>
         <div class="divider"></div>
         <!-- End Kids Account Section -->
+        <!-- Start FAQ -->
+        <section class="stn-padding">
+          <h1 class="fw-extr-bold stn-heading txt-c mb-30">
+            Frequently Asked Questions
+          </h1>
+          <ul class="questions-list">
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 clr-neutral mb-10">
+              What is Netflix?
+            </li>
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 clr-neutral mb-10">
+              How much does Netflix cost?
+            </li>
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 clr-neutral mb-10">
+              Where can I watch?
+            </li>
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 pt-30 pb-30 clr-neutral mb-10">
+              How do I cancel?
+            </li>
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 clr-neutral mb-10">
+              What can I watch on netflix?
+            </li>
+            <li class="question | p-relative fs-normal d-flex justify-between p-20 clr-neutral">
+              Is Netflix good for kids?
+            </li>
+          </ul>
+          <div class="input-group p-relative txt-c mt-30">
+            <p class="fs-small">
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </p>
+            <form class="d-flex justify-center mt-20">
+              <input
+                class="email-input p-relative"
+                type="email"
+                id="email"
+                required
+                placeholder="Email Address"
+              />
+              <button class="btn-shape ml-20">
+                Get Started
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </form>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <!-- End FAQ -->
       </main>
       <!-- End Cards -->
 
