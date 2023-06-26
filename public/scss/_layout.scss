@@ -1,6 +1,9 @@
 .d-block {
   display: block;
 }
+.d-grid {
+  display: grid;
+}
 .d-flex {
   display: flex;
 }
@@ -78,6 +81,12 @@
 .clr-neutral {
   background-color: var(--clr-neutral);
 }
+.txt-neutral {
+  color: var(--clr-neutral);
+}
+.txt-neutral-alt {
+  color: var(--clr-neutral-alt);
+}
 .clr-neutral-alt {
   background-color: var(--clr-neutral-alt);
 }
@@ -109,10 +118,9 @@
 }
 .page-wrapper {
   width: 100%;
-}
-.page-wrapper > header,
-.page-wrapper > footer,
-.page-wrapper > .our-cards > section {
-  width: calc(83.33% - 4rem);
-  margin: 0 auto;
+
+  > header, > footer, > .our-cards > section {
+    width: calc(82% - 4rem);
+    margin: 0 auto;
+  }
 }

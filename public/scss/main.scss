@@ -75,17 +75,52 @@ header {
   transition: 0.3s;
 
   &::before {
-    content: "\2b";
+    content: "+";
     font-family: "Font Awesome 6 Free";
     font-size: calc(var(--fs-normal) + 1rem);
     font-weight: 200;
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    top: 10px;
+    right: 5px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
   }
-
+  
   &:hover {
     background-color: var(--clr-neutral-alt);
+  }
+  
+  &.open-menu::before {
+    transform: rotate(45deg);
+  }
+
+  & + .accordion-menu {
+    transition: 300ms grid-template-rows, 300ms padding-block;
+    display: grid;
+    grid-template-rows: 1fr;
+
+    & > span {
+      overflow: hidden;
+    }
+
+    &[data-close=true] {
+      grid-template-rows: 0fr;
+      padding-block: 0;
+    }
+  }
+}
+
+footer {
+  .page-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1em;
+  }
+  a, p {
+    color: #eee;
+  }
+  a {
+    text-decoration: underline;
   }
 }

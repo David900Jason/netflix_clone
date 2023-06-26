@@ -39,6 +39,7 @@ dd {
 ul,
 ol {
   list-style: none;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -66,7 +67,8 @@ select {
   font: inherit;
 }
 
-label, select {
+label,
+select {
   font-size: 1rem;
 }
 
@@ -86,6 +88,10 @@ label, select {
 }
 .d-block {
   display: block;
+}
+
+.d-grid {
+  display: grid;
 }
 
 .d-flex {
@@ -189,6 +195,14 @@ label, select {
   background-color: var(--clr-neutral);
 }
 
+.txt-neutral {
+  color: var(--clr-neutral);
+}
+
+.txt-neutral-alt {
+  color: var(--clr-neutral-alt);
+}
+
 .clr-neutral-alt {
   background-color: var(--clr-neutral-alt);
 }
@@ -230,11 +244,8 @@ label, select {
 .page-wrapper {
   width: 100%;
 }
-
-.page-wrapper > header,
-.page-wrapper > footer,
-.page-wrapper > .our-cards > section {
-  width: calc(83.33% - 4rem);
+.page-wrapper > header, .page-wrapper > footer, .page-wrapper > .our-cards > section {
+  width: calc(82% - 4rem);
   margin: 0 auto;
 }
 
@@ -1068,12 +1079,19 @@ label, select {
   color: white;
   z-index: 1;
 }
+.select-button .globe-2 {
+  top: 3px !important;
+}
 .select-button .arrow-down {
   position: absolute;
   top: 10px;
   right: 16px;
   color: white;
   z-index: 1;
+}
+.select-button .arrow-down-2 {
+  right: 10px;
+  top: 5px;
 }
 .select-button-lang {
   font-size: 1rem;
@@ -1191,12 +1209,41 @@ header .logo {
   font-size: calc(var(--fs-normal) + 1rem);
   font-weight: 200;
   position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  top: 10px;
+  right: 5px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
 }
 .question:hover {
   background-color: var(--clr-neutral-alt);
+}
+.question.open-menu::before {
+  transform: rotate(45deg);
+}
+.question + .accordion-menu {
+  transition: 300ms grid-template-rows, 300ms padding-block;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.question + .accordion-menu > span {
+  overflow: hidden;
+}
+.question + .accordion-menu[data-close=true] {
+  grid-template-rows: 0fr;
+  padding-block: 0;
+}
+
+footer .page-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1em;
+}
+footer a, footer p {
+  color: #eee;
+}
+footer a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
