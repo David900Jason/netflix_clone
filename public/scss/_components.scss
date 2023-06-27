@@ -95,13 +95,21 @@
 }
 
 .install-box {
-  border: 2px solid #232323;
-  background-color: #000;
-  border-radius: 0.75rem;
   overflow: hidden;
-  top: 75%;
-  left: 21%;
-  min-width: 21.875rem;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  width: 60%;
+  min-width: 15rem;
+  padding: 0.25rem 0.65rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 1);
+  border-radius: 0.75rem;
+  z-index: 1;
 
   img {
     display: block;
@@ -109,6 +117,15 @@
   }
 
   .video img {
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgba(0, 0, 0, 1);
+    outline-offset: -2px;
+    display: block;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+
   }
 }

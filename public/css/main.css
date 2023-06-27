@@ -1130,22 +1130,75 @@ select {
 }
 
 .install-box {
-  border: 2px solid #232323;
-  background-color: #000;
-  border-radius: 0.75rem;
   overflow: hidden;
-  top: 75%;
-  left: 21%;
-  min-width: 21.875rem;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  width: 60%;
+  min-width: 15rem;
+  padding: 0.25rem 0.65rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+  z-index: 1;
 }
 .install-box img {
   display: block;
   height: 4.5rem;
 }
 .install-box .video img {
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: -2px;
+  display: block;
+  background-size: 100%;
+  content: "";
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  .page-wrapper :is(section, header, footer) {
+    padding-inline: 2vw;
+    width: 98vw;
+  }
+  .input-group > form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-group > form input {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1399px) {
+  .page-wrapper > .our-cards > section {
+    padding-inline: 2vw;
+    padding-block: 15vh;
+    width: 98vw;
+    row-gap: 4em;
+    flex-direction: column;
+  }
+  .page-wrapper > .our-cards > section > .text {
+    text-align: center;
+  }
+  .page-wrapper > .our-cards > section > .text p {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .page-wrapper > .our-cards > section > .image > img {
+    width: 90vw;
+    display: block;
+  }
+}
 body {
   background-color: #000;
   color: #fff;
@@ -1170,7 +1223,7 @@ header .logo {
   padding: 9.875rem 0 4rem;
   background-image: url("../images/main_background.jpg");
   background-position: right bottom;
-  background-size: 125%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
@@ -1187,9 +1240,15 @@ header .logo {
   font-weight: 400;
 }
 .television .image video {
-  top: 95px;
-  left: 85px;
   z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  top: 48%;
+  left: 49.5%;
+  transform: translate(-50%, -50%);
 }
 
 .devices video {
